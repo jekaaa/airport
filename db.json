@@ -1,0 +1,44 @@
+{
+    "flights": [
+        {
+            "id": 1500396021299,
+            "number": "143",
+            "fromCity": "Лондон",
+            "toCity": "Москва",
+            "type": "Аэробус А-320",
+            "time": "13-22",
+            "realTime": "13-24",
+            "status": "Вылетел"
+        },
+        {
+            "id": 6,
+            "number": "842",
+            "fromCity": "Анталия",
+            "toCity": "Екатеринбург",
+            "type": "IL -156",
+            "time": "17-23",
+            "realTime": "17-29",
+            "status": "Летит"
+        },
+        {
+            "id": 1,
+            "number": "775",
+            "fromCity": "Москва",
+            "toCity": "Берлин",
+            "type": "boing 747",
+            "time": "17-00",
+            "realTime": "17-02",
+            "status": "Вылетел"
+        },
+        {
+            "id": 5,
+            "number": "829",
+            "fromCity": "Анталия",
+            "toCity": "Екатеринбург",
+            "type": "ИЛ - 86",
+            "time": "14-23",
+            "realTime": "14-26",
+            "status": "Летит"
+        }
+    ]
+}
