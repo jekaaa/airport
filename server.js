@@ -100,7 +100,7 @@ app.route("/api")
 		else res.sendStatus(400)
 	})
 
-app.post("/api/city", (req, res) => {
+app.get("/api/city", (req, res) => {
 	if (req.body.city) {
 		fs.readFile('db.json', (err, data) => {
 			if(err) res.sendStatus(500)
@@ -115,7 +115,7 @@ app.post("/api/city", (req, res) => {
 	else res.sendStatus(400)
 })
 
-app.post("/api/status", (req, res) => {
+app.get("/api/status", (req, res) => {
 	if (req.body.status) {
 		fs.readFile('db.json', (err, data) => {
 			if(err) res.sendStatus(500)
