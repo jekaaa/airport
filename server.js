@@ -101,13 +101,13 @@ app.route("/api")
 	})
 
 app.get("/api/city", (req, res) => {
-	if (req.body.city) {
+	if (req.query.city) {
 		fs.readFile('db.json', (err, data) => {
 			if(err) res.sendStatus(500)
 	        else res.json(JSON.parse(data).flights
 	        	.filter(item => (
-		        	(item.fromCity == req.body.city) || 
-		        	(item.toCity == req.body.city))
+		        	(item.fromCity == req.query.city) || 
+		        	(item.toCity == req.query.city))
 	        	)
 	        )
 		})
@@ -116,11 +116,11 @@ app.get("/api/city", (req, res) => {
 })
 
 app.get("/api/status", (req, res) => {
-	if (req.body.status) {
+	if (req.query.status) {
 		fs.readFile('db.json', (err, data) => {
 			if(err) res.sendStatus(500)
 	        else res.json(JSON.parse(data).flights
-	        	.filter(item => item.status == req.body.status)
+	        	.filter(item => item.status == req.query.status)
 	        )
 		})
 	}
