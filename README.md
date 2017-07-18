@@ -1,7 +1,7 @@
-h3 Тестовое задание
+### Тестовое задание
 Airport react-redux spa app
 ---
-h3 Запуск приложения
+### Запуск приложения
 ---
     npm install
     npm start 
